@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Masonry Picture Wall</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #fafafa;
+    }
 
+    .grid {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid-sizer,
+    .grid-item {
+      width: 25%; /* 4 columns */
+    }
+
+    .grid-item {
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .grid-item img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 1024px) {
+      .grid-sizer,
+      .grid-item {
+        width: 33.3333%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .grid-sizer,
+      .grid-item {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-sizer,
+      .grid-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="grid-sizer"></div>
+
+    <!--
+    Picture format:
+    <div class="grid-item"><img src="source"></div>
+    -->
+    
+    <div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Black_Hole_Blue_Side.png"></div>
+    <div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Donut_%28working_in_progress%29.jpg"></div>
+    
+    
+  </div>
+
+  <!-- Masonry.js via CDN -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script>
+    // wait till all images are loaded
+    window.addEventListener('load', () => {
+      new Masonry('.grid', {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        gutter: 0,
+        percentPosition: true
+      });
+    });
+  </script>
+</body>
+</html>
