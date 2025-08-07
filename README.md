@@ -2,15 +2,15 @@ A picture wall of boys wearing tights: in different colors, different styles, an
 
 About
 -
-Something used to satisfy the site maker's unusual fetish.
+Something used to satisfy the site maker's unusual (yet somewhat specific) stocking fetish.
 
-This page is originally released in early 2022, on Google Sites. It was just an effort to concentrate pictures (of boy wearing tights of course) I like into one single place, so I don't have to alternate between dozens of tabs when I jack off.
+This page is originally released in early 2022, on Google Sites. It was just an effort to concentrate pictures (of boys wearing tights of course) I like into one single place, so I don't have to alternate between dozens of tabs when I jack off.
 
-On August 2025, I finally decided to migrate the page — because Google Sites is too uncustomizable.
+On August 2025, I finally decided to migrate the page — because Google Sites is too uncustomizable. I wanted to try out new layouts.
 
 Pictures
 -
-Everything on the wall comes from a lot of different sources.
+Everything on the wall comes from a lot of different sources. Google, Pinterest, YouTube videos, obscure websites...
 
 Some pictures were upscaled with online tools, chiefly [PicWish](https://picwish.com/unblur-image-portrait), or edited with whatever program I prefer to use.
 
