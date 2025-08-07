@@ -1,4 +1,4 @@
-A picture wall of boys wearing tights
+A picture wall of boys wearing tights: in different colors, in different styles, in different ages
 
 About
 -
