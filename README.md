@@ -20,7 +20,7 @@ Why AI? Because that's how I can get almost exactly what I want to see. It can e
 
 Oh, some pictures are also "real + AI." A real "base" picture with some enhancements made with AI.
 
-I mainly use [Stable Diffusion Web](https://www.stablediffusionweb.com) as my main image generator. It gives nice results, and the site is really easy to abuse: just set up a [Proton](protonmail.com) mailbox, add as many email alias as you want... boom, now you can create so many new accounts and evade their nasty credits cooldown!
+I mainly use [Stable Diffusion Web](https://stablediffusionweb.com/) as my main image generator. It gives nice results, and the site is really easy to abuse: just set up a [Proton mailbox](https://protonmail.com), add as many email alias as you want... boom, now you can create so many new accounts and render their credits cooldown useless!
 
 Layout
 -
