@@ -26,6 +26,6 @@ Layout
 -
 Coded by ChatGPT. Not sure where the script came from. It's called Masonry.js anyways.
 
-Legality?
+Legality (?)
 -
-Definitely not safe for work. Folks from the FBI still haven't knocked on my door yet.
+Definitely not safe for work.
