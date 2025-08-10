@@ -1,8 +1,12 @@
 A picture wall of boys wearing tights: in different colors, different styles, and different ages
 
+(No one's ever find this obscure piece of **** anyways, why am I still writing a README...)
+
+(If you've found me, please say hi: c40115hello at gmail dot com)
+
 About
 -
-Something used to satisfy the site maker's unusual (yet somewhat specific) stocking fetish.
+Something used to satisfy the site maker's unusual (yet somewhat specific) tights fetishism.
 
 This page is originally released in early 2022, on Google Sites. It was just an effort to concentrate pictures (of boys wearing tights of course) I like into one single place, so I don't have to alternate between dozens of tabs when I jack off.
 
