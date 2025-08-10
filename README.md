@@ -8,21 +8,21 @@ About
 -
 Something used to satisfy the site maker's unusual (yet somewhat specific) tights fetishism.
 
-This page is originally released in early 2022, on Google Sites. It was just an effort to concentrate pictures (of boys wearing tights of course) I like into one single place, so I don't have to alternate between dozens of tabs when I jack off.
+This page is originally released in early 2022, on Google Sites. It was just an effort to concentrate pictures (of boys wearing tights of course) I like into one single place, so I don't have to alternate between dozens of tabs while I jack off.
 
-On August 2025, I finally decided to migrate the page — because Google Sites is too uncustomizable. I wanted to try out new layouts.
+On August 2025, I finally decided to migrate the page, because Google Sites is too uncustomizable — I wanted to try new layouts.
 
 Pictures
 -
-Everything on the wall comes from a lot of different sources. Google, Pinterest, YouTube videos, obscure websites...
+Everything on the wall comes from a lot of different sources. Google, Pinterest, YouTube videos, obscure websites... you name it.
 
 Some pictures were upscaled with online tools, chiefly [PicWish](https://picwish.com/unblur-image-portrait), or edited with whatever program I prefer to use.
 
 Most pictures depict real people, but some are AI generated. Some of those AI pictures are directly downloaded from the web, but I generate (and adjust) some too.
 
-Why AI? Because that's how I can get almost exactly what I want to see. It can even make 𝓷𝓲𝓬𝓮𝓻 scenes that simply don't exist in real life.
+Why AI? Because that's how I can get almost exactly what I want to see. It can even make *hornier* scenes that simply won't exist in real life.
 
-Oh, some pictures are also "real + AI." A real "base" picture with some enhancements made with AI.
+Some pictures are also “mixes of real and AI,” e.g. a real “base” picture with some enhancements made with AI.
 
 I use [Stable Diffusion Web](https://stablediffusionweb.com/) as my main image generator. It gives nice results, and the site is really easy to abuse: just set up a [Proton mailbox](https://protonmail.com), add as many email alias as you want... boom, now you can create so many new accounts and render their credits cooldown useless!
 
