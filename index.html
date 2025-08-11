@@ -197,33 +197,34 @@
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
   <script>
-  window.addEventListener('load', () => {
-    const grid = document.querySelector('.grid');
+window.addEventListener('load', () => {
+  const grid = document.querySelector('.grid');
 
-    // Wait for ALL images to load before doing anything
-    imagesLoaded(grid, () => {
-      // Detect wide images after sizes are known
-      grid.querySelectorAll('.grid-item img').forEach(img => {
-        if (img.naturalWidth > img.naturalHeight) {
-          img.parentElement.classList.add('grid-item--wide');
-        }
-      });
+  // Ensure we wait for ALL images (including cached ones) before layout
+  imagesLoaded(grid, { background: true }, () => {
 
-      // Initialize Masonry
-      const msnry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        gutter: 0,
-        percentPosition: true,
-        transitionDuration: '0.3s'
-      });
+    // Detect and tag wide images before Masonry init
+    grid.querySelectorAll('.grid-item img').forEach(img => {
+      if (img.naturalWidth > img.naturalHeight) {
+        img.parentElement.classList.add('grid-item--wide');
+      }
+    });
 
-      // Re-layout if something loads late (e.g., slow images)
-      imagesLoaded(grid).on('progress', () => {
-        msnry.layout();
-      });
+    // Now Masonry can calculate with final widths
+    const msnry = new Masonry(grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      gutter: 0,
+      percentPosition: true,
+      transitionDuration: '0.3s'
+    });
+
+    // Relayout after each image load to handle stragglers
+    imagesLoaded(grid).on('progress', () => {
+      msnry.layout();
     });
   });
+});
   </script>
 </body>
 </html>
