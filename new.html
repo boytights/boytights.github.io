@@ -30,6 +30,7 @@
     .grid-item {
       padding: 6px;
       box-sizing: border-box;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .grid-item img {
@@ -69,7 +70,8 @@
 <body>
   <div class="grid">
     <div class="grid-sizer"></div>
-    
+
+<!-- IMAGE BLOCK STARTS -->
 <div class="grid-item"><img src="/img/img-01.jpg"></div>
 <div class="grid-item"><img src="/img/img-02.png"></div>
 <div class="grid-item"><img src="/img/img-03.jpg"></div>
@@ -186,29 +188,37 @@
 <div class="grid-item"><img src="/img/img-114.jpg"></div>
 <div class="grid-item"><img src="/img/img-115.jpg"></div>
 <div class="grid-item"><img src="/img/img-116.jpg"></div>
+<!-- IMAGE BLOCK ENDS -->
     
   </div>
 
-  <!-- Masonry.js -->
+  <!-- Masonry & imagesLoaded -->
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
   <script>
     window.addEventListener('load', () => {
       const grid = document.querySelector('.grid');
 
-      // First, detect wide images and add the class
+      // Detect wide images before layout
       grid.querySelectorAll('.grid-item img').forEach(img => {
         if (img.naturalWidth > img.naturalHeight) {
           img.parentElement.classList.add('grid-item--wide');
         }
       });
 
-      // Now init Masonry
-      new Masonry(grid, {
+      // Initialize Masonry with animation
+      const msnry = new Masonry(grid, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         gutter: 0,
-        percentPosition: true
+        percentPosition: true,
+        transitionDuration: '0.3s'
+      });
+
+      // Relayout after each image loads to remove gaps
+      imagesLoaded(grid).on('progress', () => {
+        msnry.layout();
       });
     });
   </script>
