@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Boy Tights</title>
+        <link rel="icon" type="x-icon" href="/images/icon.png">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: black;
+                font-family: system-ui, sans-serif;
+            }
+
+            .app {
+                width: 90vw;
+                margin: 2rem auto;
+            }
+
+            .card {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+                gap: 1rem;
+                max-width: clamp(60rem, 90vw, 88rem);
+                margin-inline: auto;
+                grid-auto-rows: 8px;
+                grid-auto-flow: dense;
+                will-change: contents;
+            }
+
+            .card img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 1rem;
+                transition: transform .2s ease-in-out;
+                user-select: none;
+                opacity: 1;
+            }
+
+            .card img:hover {
+                transform: scale(1.025);
+                cursor: pointer;
+            }
+
+            .landscape {
+                grid-column: span 2;
+            }
+
+            @media (max-width: 28rem) {
+                .landscape {
+                    grid-column: span 1;
+                }
+            }
+
+            .notify {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -150%);
+                background: white;
+                color: black;
+                padding: .5rem 1.15rem;
+                border-radius: 999px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
+                transition: transform 420ms cubic-bezier(.22, .9, .3, 1), opacity 300ms ease;
+                opacity: 0;
+                z-index: 9999;
+                pointer-events: none;
+                font-size: .95rem;
+                line-height: 1;
+                display: inline-flex;
+                align-items: center;
+                gap: .05rem;
+                will-change: transform, opacity;
+                font-weight: 400;
+            }
+
+            .notify.show {
+                transform: translate(-50%, 8px);
+                opacity: 1;
+            }
+
+            .notify .count {
+                font-weight: inherit;
+                min-width: 1rem;
+                text-align: center;
+                display: inline-block;
+                font-variant-numeric: tabular-nums;
+                font-feature-settings: "tnum";
+            }
+
+            @media (max-width: 420px) {
+                .notify {
+                    font-size: .85rem;
+                    padding: .45rem .9rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <div class="card">
+                <img src="/images/img-00001.jpg">
+                <img src="/images/img-00002.png">
+                <img src="/images/img-00003.jpg">
+                <img src="/images/img-00004.jpg">
+                <img src="/images/img-00005.png">
+                <img src="/images/img-00006.png">
+                <img src="/images/img-00007.jpg">
+                <img src="/images/img-00008.jpg">
+                <img src="/images/img-00009.png">
+                <img src="/images/img-00010.jpg">
+                <img src="/images/img-00011.jpg">
+                <img src="/images/img-00012.jpg">
+                <img src="/images/img-00013.png">
+                <img src="/images/img-00014.png">
+                <img src="/images/img-00015.png">
+                <img src="/images/img-00016.png">
+                <img src="/images/img-00017.png">
+                <img src="/images/img-00018.png">
+                <img src="/images/img-00019.jpg">
+                <img src="/images/img-00020.png">
+                <img src="/images/img-00021.png">
+                <img src="/images/img-00022.jpg">
+                <img src="/images/img-00023.png">
+                <img src="/images/img-00024.jpg">
+                <img src="/images/img-00025.png">
+                <img src="/images/img-00026.png">
+                <img src="/images/img-00027.png">
+                <img src="/images/img-00028.jpg">
+                <img src="/images/img-00029.png">
+                <img src="/images/img-00030.png">
+                <img src="/images/img-00031.png">
+                <img src="/images/img-00032.png">
+                <img src="/images/img-00033.png">
+                <img src="/images/img-00034.png">
+                <img src="/images/img-00035.jpg">
+                <img src="/images/img-00036.png">
+                <img src="/images/img-00037.png">
+                <img src="/images/img-00038.png">
+                <img src="/images/img-00039.png">
+                <img src="/images/img-00040.jpg">
+                <img src="/images/img-00041.png">
+                <img src="/images/img-00042.jpg">
+                <img src="/images/img-00043.png">
+                <img src="/images/img-00044.png">
+                <img src="/images/img-00045.png">
+                <img src="/images/img-00046.jpg">
+                <img src="/images/img-00047.png">
+                <img src="/images/img-00048.png">
+                <img src="/images/img-00049.png">
+                <img src="/images/img-00050.png">
+                <img src="/images/img-00051.png">
+                <img src="/images/img-00052.jpg">
+                <img src="/images/img-00053.jpg">
+                <img src="/images/img-00054.png">
+                <img src="/images/img-00055.jpg">
+                <img src="/images/img-00056.jpg">
+                <img src="/images/img-00057.jpg">
+                <img src="/images/img-00058.png">
+                <img src="/images/img-00059.png">
+                <img src="/images/img-00060.png">
+                <img src="/images/img-00061.jpg">
+                <img src="/images/img-00062.png">
+                <img src="/images/img-00063.png">
+                <img src="/images/img-00064.png">
+                <img src="/images/img-00065.jpg">
+                <img src="/images/img-00066.png">
+                <img src="/images/img-00067.jpg">
+                <img src="/images/img-00068.jpg">
+                <img src="/images/img-00069.jpg">
+                <img src="/images/img-00070.png">
+                <img src="/images/img-00071.png">
+                <img src="/images/img-00072.png">
+                <img src="/images/img-00073.png">
+                <img src="/images/img-00074.jpg">
+                <img src="/images/img-00075.png">
+                <img src="/images/img-00076.png">
+                <img src="/images/img-00077.png">
+                <img src="/images/img-00078.png">
+                <img src="/images/img-00079.png">
+                <img src="/images/img-00080.png">
+                <img src="/images/img-00081.jpg">
+                <img src="/images/img-00082.jpg">
+                <img src="/images/img-00083.jpg">
+                <img src="/images/img-00084.jpg">
+                <img src="/images/img-00085.jpg">
+                <img src="/images/img-00086.jpg">
+                <img src="/images/img-00087.jpg">
+                <img src="/images/img-00088.jpg">
+                <img src="/images/img-00089.jpg">
+                <img src="/images/img-00090.jpg">
+                <img src="/images/img-00091.jpg">
+                <img src="/images/img-00092.jpg">
+                <img src="/images/img-00093.jpg">
+                <img src="/images/img-00094.jpg">
+                <img src="/images/img-00095.jpg">
+                <img src="/images/img-00096.jpg">
+                <img src="/images/img-00097.jpg">
+                <img src="/images/img-00098.jpg">
+                <img src="/images/img-00099.jpg">
+                <img src="/images/img-00100.jpg">
+                <img src="/images/img-00101.jpg">
+                <img src="/images/img-00102.jpg">
+                <img src="/images/img-00103.jpg">
+                <img src="/images/img-00104.jpg">
+                <img src="/images/img-00105.jpg">
+                <img src="/images/img-00106.jpg">
+                <img src="/images/img-00107.jpg">
+                <img src="/images/img-00108.jpg">
+                <img src="/images/img-00109.jpg">
+                <img src="/images/img-00110.jpg">
+                <img src="/images/img-00111.jpg">
+                <img src="/images/img-00112.jpg">
+                <img src="/images/img-00113.jpg">
+                <img src="/images/img-00114.jpg">
+                <img src="/images/img-00115.jpg">
+                <img src="/images/img-00116.jpg">
+                <img src="/images/img-00117.jpg">
+                <img src="/images/img-00118.jpg">
+                <img src="/images/img-00119.jpg">
+                <img src="/images/img-00120.png">
+                <img src="/images/img-00121.jpg">
+                <img src="/images/img-00122.jpg">
+                <img src="/images/img-00123.jpg">
+                <img src="/images/img-00124.jpg">
+                <img src="/images/img-00125.jpg">
+                <img src="/images/img-00126.jpg">
+                <img src="/images/img-00127.png">
+                <img src="/images/img-00128.jpg">
+                <img src="/images/img-00129.jpg">
+                <img src="/images/img-00130.jpg">
+                <img src="/images/img-00131.jpg">
+                <img src="/images/img-00132.jpg">
+                <img src="/images/img-00133.jpg">
+                <img src="/images/img-00134.jpg">
+                <img src="/images/img-00135.jpg">
+                <img src="/images/img-00136.jpg">
+                <img src="/images/img-00137.jpg">
+                <img src="/images/img-00138.jpg">
+                <img src="/images/img-00139.jpg">
+                <img src="/images/img-00140.png">
+                <img src="/images/img-00141.jpg">
+                <img src="/images/img-00142.jpg">
+                <img src="/images/img-00143.png">
+                <img src="/images/img-00144.png">
+                <img src="/images/img-00145.jpg">
+        </div>
+        <div id="notify" class="notify" role="status" aria-live="polite" aria-atomic="true" hidden>
+            <span id="notify-text">Loading complete; shuffling content in</span>
+            <span id="notify-count" class="count">3</span>
+            <span id="notify-suffix">s</span>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const parent = document.querySelector('.card');
+                if (!parent) return;
+                const initialImgs = Array.from(parent.querySelectorAll('img'));
+                const total = initialImgs.length;
+                const pool = initialImgs.map(img => {
+                    try {
+                        parent.removeChild(img);
+                    } catch (e) {
+                        /* ignore */ }
+                    img.dataset._inserted = 'false';
+                    return img;
+                });
+                const rand = () => {
+                    if (window.crypto && crypto.getRandomValues) {
+                        return crypto.getRandomValues(new Uint32Array(1))[0] / (0xFFFFFFFF + 1);
+                    }
+                    return Math.random();
+                };
+
+                function layoutAll() {
+                    const style = getComputedStyle(parent);
+                    const rowHeight = parseFloat(style.getPropertyValue('grid-auto-rows')) || 8;
+                    let gapVal = style.getPropertyValue('gap') || style.getPropertyValue('grid-row-gap') || '0';
+                    if (gapVal.indexOf(' ') !== -1) gapVal = gapVal.split(' ')[0];
+                    const gap = parseFloat(gapVal) || 0;
+                    let cols = 1;
+                    const template = style.getPropertyValue('grid-template-columns');
+                    if (template && template !== 'none') {
+                        cols = template.trim().split(/\s+/).length;
+                    } else {
+                        const parentW = parent.getBoundingClientRect().width || parent.clientWidth || 1;
+                        const minColPx = parseFloat(getComputedStyle(document.documentElement).fontSize || 16) * 12;
+                        cols = Math.max(1, Math.floor(parentW / Math.max(1, minColPx)));
+                    }
+                    const imgs = Array.from(parent.querySelectorAll('img'));
+                    imgs.forEach(img => {
+                        const nw = img.naturalWidth || img.width || 0;
+                        const nh = img.naturalHeight || img.height || 0;
+                        if (nw > nh && cols >= 2) {
+                            img.classList.add('landscape');
+                            img.style.gridColumn = 'span 2';
+                        } else {
+                            img.classList.remove('landscape');
+                            img.style.gridColumn = 'span 1';
+                        }
+                        const renderedH = Math.ceil(img.getBoundingClientRect().height) || 0;
+                        const h = renderedH || Math.ceil((nh && nw) ? (img.clientWidth * (nh / nw)) : img.clientHeight || 1);
+                        const span = Math.max(1, Math.ceil((h + gap) / (rowHeight + gap)));
+                        img.style.gridRowEnd = 'span ' + span;
+                    });
+                }
+
+                function waitForSingleImageLoad(img) {
+                    return new Promise(resolve => {
+                        if (img.complete && img.naturalHeight !== 0) {
+                            return resolve(true);
+                        }
+                        const onDone = (ev) => {
+                            img.removeEventListener('load', onDone);
+                            img.removeEventListener('error', onDone);
+                            resolve(ev.type === 'load');
+                        };
+                        img.addEventListener('load', onDone);
+                        img.addEventListener('error', onDone);
+                    });
+                }
+                let loadedCount = 0;
+
+                function onOneLoaded(img) {
+                    img.dataset._inserted = 'true';
+                    const w = img.naturalWidth || img.width || 1;
+                    const h = img.naturalHeight || img.height || 1;
+                    try {
+                        img.setAttribute('width', w);
+                        img.setAttribute('height', h);
+                    } catch (e) {
+                        /* ignore */ }
+                    img.style.aspectRatio = `${w}/${h}`;
+                    img.style.opacity = '0';
+                    const existingTransformTransition = 'transform .2s ease-in-out';
+                    img.style.transition = `opacity .5s ease, ${existingTransformTransition}`;
+                    parent.appendChild(img);
+                    layoutAll();
+                    requestAnimationFrame(() => {
+                        img.style.opacity = '1';
+                        setTimeout(layoutAll, 60);
+                    });
+                    loadedCount++;
+                    if (loadedCount === total) {
+                        showNotificationAndShuffle();
+                    }
+                }
+
+                function onOneFailed(img) {
+                    console.warn('Image failed to load. Skipping append:', img.src);
+                    loadedCount++;
+                    if (loadedCount === total) {
+                        showNotificationAndShuffle();
+                    }
+                }
+
+                function revealWhenLoaded(img) {
+                    return waitForSingleImageLoad(img).then(loaded => {
+                        if (loaded) {
+                            onOneLoaded(img);
+                        } else {
+                            onOneFailed(img);
+                        }
+                    });
+                }
+
+                function shuffleInsertedImages() {
+                    const imgs = Array.from(parent.querySelectorAll('img'));
+                    for (let i = imgs.length - 1; i > 0; i--) {
+                        const j = Math.floor(rand() * (i + 1));
+                        [imgs[i], imgs[j]] = [imgs[j], imgs[i]];
+                    }
+                    imgs.forEach(img => parent.appendChild(img));
+                }
+                pool.forEach(img => {
+                    revealWhenLoaded(img);
+                });
+                let resizeTimer = null;
+                window.addEventListener('resize', () => {
+                    clearTimeout(resizeTimer);
+                    resizeTimer = setTimeout(layoutAll, 120);
+                });
+                layoutAll();
+                const notify = document.getElementById('notify');
+                const notifyCountEl = document.getElementById('notify-count');
+                const notifyText = document.getElementById('notify-text');
+                const notifySuffix = document.getElementById('notify-suffix');
+                let notifInterval = null;
+                let notifShown = false;
+
+                function showNotificationAndShuffle() {
+                    if (!notify) {
+                        shuffleInsertedImages();
+                        layoutAll();
+                        return;
+                    }
+                    clearInterval(notifInterval);
+                    let countdown = 3;
+                    notifyCountEl.textContent = countdown;
+                    notifyText.textContent = 'Loading complete; shuffling content in';
+                    notifySuffix.textContent = 's';
+                    notify.hidden = false;
+                    requestAnimationFrame(() => {
+                        notify.classList.add('show');
+                        notifShown = true;
+                    });
+                    notifInterval = setInterval(() => {
+                        countdown--;
+                        if (countdown <= 0) {
+                            clearInterval(notifInterval);
+                            notifyCountEl.textContent = '0';
+                            setTimeout(() => {
+                                shuffleInsertedImages();
+                                layoutAll();
+                                requestAnimationFrame(() => {
+                                    notify.classList.remove('show');
+                                });
+                                setTimeout(() => {
+                                    notify.hidden = true;
+                                    notifShown = false;
+                                }, 500);
+                            }, 120);
+                        } else {
+                            notifyCountEl.textContent = String(countdown);
+                        }
+                    }, 1000);
+                }
+            });
+        </script>
+    </body>
+</html>
