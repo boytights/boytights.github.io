@@ -356,7 +356,7 @@
                 }
 
                 function onOneFailed(img) {
-                    console.warn('Image failed to load. Skipping append:', img.src);
+                    console.warn('Image failed to load, skipping append:', img.src);
                     loadedCount++;
                     if (loadedCount === total) {
                         showNotificationAndShuffle();
