@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             img.setAttribute('width', w);
             img.setAttribute('height', h);
-        } catch (e) {
-            /* ignore */
+        }
+        catch (e) {
         }
         img.style.aspectRatio = `${w}/${h}`;
         img.style.opacity = '0';
