@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: system-ui, sans-serif;
+}
+
+.app {
+    width: 90vw;
+    margin: 2rem auto;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1rem;
+    max-width: clamp(60rem, 90vw, 88rem);
+    margin-inline: auto;
+    grid-auto-rows: 8px;
+    grid-auto-flow: dense;
+    will-change: contents;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out;
+    user-select: none;
+    opacity: 1;
+}
+
+.card img:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.landscape {
+    grid-column: span 2;
+}
+
+@media (max-width: 28rem) {
+    .landscape {
+        grid-column: span 1;
+    }
+}
+
+.notify {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    background: white;
+    color: black;
+    padding: 0.5rem 1.15rem;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 420ms cubic-bezier(0.22, 0.9, 0.3, 1),
+        opacity 300ms ease;
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+    font-size: 0.95rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.05rem;
+    will-change: transform, opacity;
+    font-weight: 400;
+}
+
+.notify.show {
+    transform: translate(-50%, 8px);
+    opacity: 1;
+}
+
+.notify .count {
+    font-weight: inherit;
+    min-width: 1rem;
+    text-align: center;
+    display: inline-block;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+}
+
+@media (max-width: 420px) {
+    .notify {
+        font-size: 0.85rem;
+        padding: 0.45rem 0.9rem;
+    }
+}
