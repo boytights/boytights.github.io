@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pool = initialImgs.map(img => {
         try {
             parent.removeChild(img);
-        }
-        catch (e) {
-        }
+        } catch (e) {}
         img.dataset._inserted = 'false';
         return img;
     });
@@ -75,9 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             img.setAttribute('width', w);
             img.setAttribute('height', h);
-        }
-        catch (e) {
-        }
+        } catch (e) {}
         img.style.aspectRatio = `${w}/${h}`;
         img.style.opacity = '0';
         const existingTransformTransition = 'transform .2s ease-in-out';
